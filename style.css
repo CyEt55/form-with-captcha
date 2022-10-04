@@ -1,0 +1,47 @@
+body{
+    background-color: #ffffff;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px lightgrey;
+}
+.sample-form > div{
+    margin: 10px;
+    font-family: sans-serif;
+}
+input{
+    margin-top: 5px;
+    display: block;
+    width: 95.5%;
+    padding: 8px;
+    border: 1px solid lightgray;
+    font-size: 12px;
+}
+::placeholder{
+    color: lightgray;
+}
+label{
+    font-size: 12px;    
+}
+#btnValidar{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 15px;
+    background-color: rgb(44, 64, 203);
+}
+#btnValidar:hover{
+    background-color: rgb(39, 60, 117);
+}
+#btnValidar:disabled{
+    background: #dddddd;
+}

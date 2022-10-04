@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Form Ii with IMAP</title>
+        <meta lang="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    </head>
+    <body>
+        <div class="form-container">
+        <form class="sample-form" method="POST" action="send1.php">
+            Formulario de empresa 2
+            <div>
+                <label for="input">Email:</label>
+                <input id="correo" type="email" name="email" placeholder="EmpresaEjemplo020@gmail.com" disabled>
+            </div>
+            <div class="g-recaptcha" data-sitekey="tu llave personal de captcha" data-callback="btnHabilitar" data-expired-callback="btnInhabilitar"></div>
+            <div>
+                <button type="submit" id="btnValidar" name="send" class="input-button" disabled>SEND MAIL</button>
+            </div>
+        </form>
+        </div>
+        <script>
+            function btnHabilitar(){
+                document.getElementById("btnValidar").disabled = false;
+            }
+            function btnInhabilitar(){
+                document.getElementById("btnValidar").disabled = true;
+            }
+        </script>
+    </body>
+</html>
